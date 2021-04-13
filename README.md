@@ -17,6 +17,10 @@
 <a href="https://github.com/TracedPoints/cryptide-db#">
 	<img alt="Cryptide Version" src="https://img.shields.io/badge/Cryptide-2.4.5-lightgrey.svg">
 </a>
+
+<a href="https://github.com/TracedPoints/cryptide-db#">
+	<img alt="Status" src="https://img.shields.io/badge/status-online-brightgreen.svg">
+</a>
 </p>
 
 # Cryptide Discord Bot
