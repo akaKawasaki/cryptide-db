@@ -8,17 +8,17 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/TracedPoints/cryptide-db#">
+<a href="https://www.python.org/">
 	<img alt="Python" src="https://img.shields.io/badge/Python-3.9-yellow.svg">
 </a>
-<a href="https://github.com/TracedPoints/cryptide-db#">
+<a href="https://pypi.org/project/discord.py/">
 	<img alt="Discord.py" src="https://img.shields.io/badge/Discord.py-1.7-blue.svg">
 </a>
 <a href="https://github.com/TracedPoints/cryptide-db#">
 	<img alt="Cryptide Version" src="https://img.shields.io/badge/Cryptide-2.4.5-lightgrey.svg">
 </a>
 
-<a href="https://github.com/TracedPoints/cryptide-db#">
+<a href="https://top.gg/bot/811349622709944390/">
 	<img alt="Status" src="https://img.shields.io/badge/status-online-brightgreen.svg">
 </a>
 </p>
