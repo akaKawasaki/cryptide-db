@@ -51,4 +51,4 @@ You can run an instance by downloading the `Cryptide` folder and putting your bo
   - The official server for the Cryptide Discord Bot.
 
 ----
-*This discord bot is and forever will bed licensed under the Apache 2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.*
+*This discord bot is licensed under the Apache 2.0, unless stated otherwise with a separate license. Any violation of the policy of this licence may result in a DMCA takedown.*
