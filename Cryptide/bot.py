@@ -99,7 +99,7 @@ bot.Modules = [
         #Info
         "__modules__.Misc", #Most Events/Listeners Are Here | Misc Commands
         "__modules__.Help", #Help Commands
-        "__data__.Docs", #Holds The RTFM Command. Not about to mess uo my other cogs. So It has its own cog file.
+        "__data__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
 
         #Experimental
         "__modules__.Forbidden", #Owner/Test Commands
@@ -108,6 +108,7 @@ bot.Modules = [
         "jishaku", #A Useful Cog
         "__modules__.Mod", #Moderation/Enforcement Commands
         "__automod__.Antispam", #AntiSpam Module
+        "__automod__.Censor", #Censoring Module
 
         #Regular
         "__modules__.NSFW", #NSFW/18+ Commands
