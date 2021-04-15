@@ -1,7 +1,20 @@
+# -*- coding: utf-8 -*-
+
+"""
+Cryptide Antispam Cog
+~~~~~~~~~~~~~~~~~~~~~
+
+The Antispam Functionality Resides Here.
+
+:copyright: (c) 2021 Trenton "Kawasaki" G
+:terms: No Public Use
+:visibilty: Private Cog
+
+"""
+
 from discord.ext import commands
 from AntiSpam import AntiSpamHandler
 from AntiSpam.ext import AntiSpamTracker
-import json
 
 class Antispam(commands.Cog, name="Antispam"):
     def __init__(self, bot):
