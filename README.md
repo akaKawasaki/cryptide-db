@@ -45,6 +45,7 @@ You can run an instance by downloading the `Cryptide` folder and putting your bo
 
 ## Contributors
 - Error Handler : `NullPointer#3322`
+- Randcolor Command : `NullPointer#3322`
 - Rtfm/Rtfd Command : `Skelmis#9135`
 
 ## Contact
