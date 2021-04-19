@@ -29,8 +29,7 @@ Cryptide is a discord bot with the basic tools a discord bot comes with, plus so
 - For extra information about the bot, use the command `c!help`
 
 ## Key Features
-- **Moderation**
-- **Auto Mod**
+- **Moderation/Auto-Moderation**
 - **Fun**
 - **Utility**
 - **Misc**
