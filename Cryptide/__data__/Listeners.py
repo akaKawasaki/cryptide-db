@@ -12,6 +12,7 @@ The listener Functionality Resides Here.
 
 """
 
+import discord
 from discord.ext import commands
 
 class Listeners(commands.Cog, name="Listeners"):
