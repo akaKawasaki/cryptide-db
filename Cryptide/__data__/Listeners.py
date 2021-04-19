@@ -55,6 +55,5 @@ class Listeners(commands.Cog, name="Listeners"):
     async def on_guild_remove(self, guild):
         await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(self.bot.users)} Users | c!help"))
 
-      
 def setup(bot):
     bot.add_cog(Listeners(bot))
