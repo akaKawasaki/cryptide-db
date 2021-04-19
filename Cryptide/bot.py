@@ -5,7 +5,7 @@ Cryptide Discord Bot
 This is a public multipurpose discord bot.
 
 :copyright: (c) 2021 Trenton "Kawasaki" G
-:terms: Not Open-Sourced
+:terms: Open-Sourced
 :visibilty: Public Bot
 
 """
