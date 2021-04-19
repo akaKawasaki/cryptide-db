@@ -35,6 +35,7 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='• **__Owner Commands__**', value="`c!owner`", inline=True)
 	    embed.add_field(name='• **__NSFW Commands__**', value="`c!nsfw`", inline=True)
 	    embed.add_field(name='• **__Fun Commands__**', value="`c!fun`", inline=True)
+	    embed.add_field(name='• **__Social Commands__**', value="`c!social`", inline=True)
 	    embed.set_thumbnail(url=imageUrl)
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar_url)
@@ -97,11 +98,24 @@ class Help(commands.Cog, name="Help"):
 
 	    embed = discord.Embed(title=f"Fun", description='Fun Commands!', colour=0xC0C0C0, timestamp=ctx.message.created_at)
 
-	    embed.add_field(name='Makes the bot say anything', value="`c!echo <any_message_you_want>`", inline=False)
 	    embed.add_field(name='Roles a 6 sided dice', value="`c!dice`", inline=False)
 	    embed.add_field(name='Bot answers a question', value="`c!8ball <question>`", inline=False)
 	    embed.add_field(name='Sends an embed message out to the chat. (it doesnt ping btw)', value="`c!poll <message>`", inline=False)
 	    embed.add_field(name='Flips a coin.', value="`c!flip`", inline=False)
+	    #embed.add_field(name='Tells A Rape Joke.', value="`c!rjoke`", inline=False)
+	    embed.add_field(name='Tells A Dad Joke.', value="`c!djoke`", inline=False)
+
+	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
+	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)
+
+	    await ctx.send(embed=embed)
+
+	@commands.command("social")
+	async def embedi(self, ctx):
+
+	    embed = discord.Embed(title=f"Social", description='Social Commands!', colour=0xC0C0C0, timestamp=ctx.message.created_at)
+
+	    embed.add_field(name='Makes the bot say anything', value="`c!echo <any_message_you_want>`", inline=False)
 	    embed.add_field(name='Slaps somebody', value="`c!slap <@user>`", inline=False)
 	    embed.add_field(name='Kiss somebody', value="`c!kiss <@user>`", inline=False)
 	    embed.add_field(name='Hug somebody', value="`c!hug <@user>`", inline=False)
@@ -109,8 +123,6 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='Tickle somebody', value="`c!tickle <@user>`", inline=False)
 	    embed.add_field(name='Poke somebody', value="`c!poke <@user>`", inline=False)
 	    embed.add_field(name='Insult somebody', value="`c!bully <@user>`", inline=False)
-	    #embed.add_field(name='Tells A Rape Joke.', value="`c!rjoke`", inline=False)
-	    embed.add_field(name='Tells A Dad Joke.', value="`c!djoke`", inline=False)
 
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)
