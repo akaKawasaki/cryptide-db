@@ -28,6 +28,7 @@ class Moderation(commands.Cog, name="Moderation"):
 		self.bot = bot
 		self.passGene = Generator
 
+
 	@commands.command(name="sudo")
 	@commands.is_owner()
 	async def sudo(self, ctx: commands.Context, *, command_string: str):
@@ -88,3 +89,4 @@ class Moderation(commands.Cog, name="Moderation"):
 
 def setup(bot):
     bot.add_cog(Moderation(bot))
+    bot.load_extension("jishaku")
