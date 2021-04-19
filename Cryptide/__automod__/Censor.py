@@ -23,7 +23,7 @@ class Censor(commands.Cog, name="Censor"):
         #advert detector
         if "discord.gg" in message.content.lower():
             await message.delete()
-            await message.channel.send("Don't advertise your server!")
+            await message.channel.send("Don't advertise your server")
 
         #nword detector
         if "nigger" in message.content.lower():
