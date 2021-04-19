@@ -41,7 +41,7 @@ class Misc(commands.Cog, name="Misc"):
 
 		#Bot Info
 		self.title = "Bot"
-		self.version = "2.4.5 Full Release"
+		self.version = "2.4.6 Full Release"
 
 		#Pass Generator
 		self.generator = Generator
@@ -85,6 +85,11 @@ class Misc(commands.Cog, name="Misc"):
 	@commands.Cog.listener()
 	async def on_guild_join(self, guild):
 		await guild.owner.send(f"Hi! I'm Cryptide. Thanks For Welcoming Me To `{guild.name}`! My Command Prefix Is `c!` or `--`. I'm A Multipurpose Utiliy Bot! If you'd like a more informative lecture, use the command `c!help")
+		await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(self.bot.users)} Users | c!help"))
+
+	@commands.Cog.listener()
+	async def on_guild_remove(self, guild):
+		await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(self.bot.users)} Users | c!help"))
 
 	@commands.Cog.listener()
 	async def on_message_delete(self, message: discord.Message):
