@@ -51,7 +51,7 @@ rich_presence.presences = True
 
 init() #windows
 
-#Defining The Client
+#Defining The Client :D
 bot = commands.Bot(
     command_prefix=commands.when_mentioned_or('c!', '--', 'c/', 'c$', 'c.', 'c~'),
     case_insensitive=True,
