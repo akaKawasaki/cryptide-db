@@ -15,7 +15,7 @@
 	<img alt="Discord.py" src="https://img.shields.io/badge/Discord.py-1.7-blue.svg">
 </a>
 <a href="https://github.com/TracedPoints/cryptide-db#">
-	<img alt="Cryptide Version" src="https://img.shields.io/badge/Cryptide-2.4.5-lightgrey.svg">
+	<img alt="Cryptide Version" src="https://img.shields.io/badge/Cryptide-2.4.6-lightgrey.svg">
 </a>
 
 <a href="https://top.gg/bot/811349622709944390/">
