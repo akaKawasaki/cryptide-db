@@ -139,7 +139,7 @@ class Misc(commands.Cog, name="Misc"):
 		start = time.time()
 		message = await ctx.send("Pinging...")
 		end = time.time()
-		await message.edit(content=f'**Bot Latency**: `{round (self.bot.latency * 1000)}` **ms**\n**API Latency**: `{round((end - start) * 1000)}` **ms**')
+		await message.edit(content=f'**Bot latency**: {round (self.bot.latency * 1000)}ms\n**Websocket latency**: {round((end - start) * 1000)}ms')
 
 	@commands.command()
 	async def whois(self, ctx, member: discord.Member = None):
