@@ -51,7 +51,7 @@ rich_presence.presences = True
 
 init() #windows
 
-#Defining The Client :D
+#Defining The Client
 bot = commands.Bot(
     command_prefix=commands.when_mentioned_or('c!', '--', 'c/', 'c$', 'c.', 'c~'),
     case_insensitive=True,
@@ -109,6 +109,7 @@ bot.Modules = [
         "__modules__.Mod", #Moderation/Enforcement Commands
         "__automod__.Antispam", #AntiSpam Module
         "__automod__.Censor", #Censoring Module
+        "jishaku" #Debugging Cog
 
         #Regular
         "__modules__.NSFW", #NSFW/18+ Commands
