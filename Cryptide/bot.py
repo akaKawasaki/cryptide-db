@@ -97,9 +97,10 @@ bot.token = secret_file['token']
 bot.Modules = [
         
         #Info
-        "__modules__.Misc", #Most Events/Listeners Are Here | Misc Commands
+        "__modules__.Misc", #Misc Commands
         "__modules__.Help", #Help Commands
         "__data__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
+        "__data__.Listeners", #Main Event Listeners Reside Here
 
         #Experimental
         "__modules__.Forbidden", #Owner/Test Commands
