@@ -8,6 +8,12 @@
 </p>
 
 <p align="center">
+<a href="https://top.gg/bot/811349622709944390">
+  <img src="https://top.gg/api/widget/owner/811349622709944390.svg?noavatar=true" alt="Cryptide" />
+  </a>
+</p>
+
+<p align="center">
 <a href="https://www.python.org/">
 	<img alt="Python" src="https://img.shields.io/badge/Python-3.9-yellow.svg">
 </a>
