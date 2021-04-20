@@ -101,7 +101,6 @@ bot.Modules = [
         "__modules__.Help", #Hold Command Lists.
         "__data__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
         "__data__.Listeners", #Main Event Listeners Reside Here
-        "__data__.dbl", #Top.gg API
 
         #Experimental
         "__modules__.Forbidden", #Owner/Test Commands
