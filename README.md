@@ -9,7 +9,7 @@
 
 <p align="center">
 <a href="https://top.gg/bot/811349622709944390">
-  <img src="https://top.gg/api/widget/owner/811349622709944390.svg?noavatar=true" alt="Cryptide" />
+  <img src="https://top.gg/api/widget/owner/811349622709944390.svg?noavatar=true" alt="OwnerTag" />
   </a>
 </p>
 
