@@ -90,8 +90,8 @@ bot.responseMessages = {
 }
 
 #Defining Our Token
-secret_file = json.load(open(cwd+'/__config__/secrets.json'))
-bot.token = secret_file['token']
+auths = json.load(open(cwd+'/__config__/auths.json'))
+bot.token = auths['token']
 
 #Defining The Cogs
 bot.Modules = [
@@ -166,7 +166,6 @@ async def updateCommands(ctx):
     print("Bot has been update :D")
     for x in bot.Modules:
         bot.reload_extension(x)
-
 
 @bot.command()
 async def help(ctx):
