@@ -3,7 +3,7 @@
 		<img align="center"
 			width="128"
 			alt="Logo"
-			src="/Cryptide/bot2.png">
+			src="/Images/Logo.png">
 	</a>
 </p>
 
