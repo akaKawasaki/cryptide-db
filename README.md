@@ -42,10 +42,13 @@ You can run an instance by downloading the `Cryptide` folder and putting your bo
 - Main Devloper : `Kawasaki#0787`
 
 ## Contributors
-- Error Handler : `NullPointer#3322`
-- Randcolor Command : `NullPointer#3322`
-- Rtfm/Rtfd Command : `Skelmis#9135`
-- Music Commands : [MrArkon](https://github.com/MrArkon/)
+- [9u3](https://github.com/9u3/)
+  - Error Handler
+  - Randcolor Cmd
+- [Skelmis](https://github.com/skelmis/)
+  - Rtfm/Rtfd Command
+- [MrArkon](https://github.com/MrArkon/)
+  - Music Commands
 
 ## Contact
 - [Discord Server](https://discord.gg/8JuseZMjzf)
