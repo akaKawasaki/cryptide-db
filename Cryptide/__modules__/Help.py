@@ -35,6 +35,7 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='• **__NSFW Commands__**', value="`c!nsfw`", inline=True)
 	    embed.add_field(name='• **__Fun Commands__**', value="`c!fun`", inline=True)
 	    embed.add_field(name='• **__Social Commands__**', value="`c!social`", inline=True)
+	    embed.add_field(name='• **__Music Commands__**', value="`c!music`", inline=True)
 	    embed.set_thumbnail(url=imageUrl)
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar_url)
@@ -50,6 +51,26 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='Kicks somebody from the Server', value="`c!kick <@user_of_choice> <reason>`", inline=False)
 	    embed.add_field(name='Bans somebody from the Server', value="`c!ban <@user_of_choice> <reason>`", inline=False)
 	    embed.add_field(name='Unbans somebody from the Server', value="`c!unban <@user_thats_banned>`", inline=False)
+
+	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
+	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)
+
+	    await ctx.send(embed=embed)
+
+	@commands.command("music")
+	async def embed4(self, ctx):
+
+	    embed = discord.Embed(title=f'Music Commands', description='Here are my music Modules!', colour=0xC0C0C0, timestamp=ctx.message.created_at)
+
+	    embed.add_field(name='Connects the bot to the vc', value="`c!connect`", inline=False)
+	    embed.add_field(name='Plays the song you want to play', value="`c!play <song_with_artist>`", inline=False)
+	    embed.add_field(name='Pause the current playing song, if any', value="`c!pause`", inline=False)
+	    embed.add_field(name='Unpause the current paused song, if any', value="`c!resume`", inline=False)
+	    embed.add_field(name='Skips the current playing song, if any', value="`c!skip`", inline=False)
+	    embed.add_field(name='See the current songs in the queue, if any', value="`c!queue`", inline=False)
+	    embed.add_field(name='See the current plying song, if any', value="`c!current`", inline=False)
+	    embed.add_field(name='Change the volume', value="`c!volume <int of 1 - 100>`", inline=False)
+	    embed.add_field(name='Disconnects the bot, clears queue, stops playing music', value="`c!leave`", inline=False)
 
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)
