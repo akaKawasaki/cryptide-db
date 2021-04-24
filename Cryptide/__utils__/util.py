@@ -3,6 +3,7 @@ import asyncio
 import discord
 from discord.ext.buttons import Paginator
 
+
 class Pag(Paginator):
     async def teardown(self):
         try:
