@@ -161,10 +161,6 @@ class Docs(commands.Cog, name="Documentation"):
         e.set_footer(text=f"Requested by: {ctx.author.display_name}")
         await ctx.send(embed=e)
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print(f"{self.__class__.__name__} Cog has been loaded\n-----")
-
     @commands.command(
         name="rtfm",
         description="Gives you a documentation link for an entity.",
