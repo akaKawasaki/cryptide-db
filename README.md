@@ -39,6 +39,7 @@ Cryptide is a discord bot with the basic tools a discord bot comes with, plus so
 - **Fun**
 - **Utility**
 - **Nsfw**
+- **Music**
 
 You can run an instance by downloading the `Cryptide` folder and putting your bots token in the `secrets.json` file found in the `__config__` folder. The needed requirements can be found in the `imports.txt` file. Alternatively, You can [invite the bot to your server](https://discord.com/api/oauth2/authorize?client_id=811349622709944390&permissions=8&scope=bot) and use the freshest instance (recommended).
 <p style="color:red">Warning, If you use this source code, it can not be submitted to any bot lists or you are violating our license.</p>
@@ -50,6 +51,7 @@ You can run an instance by downloading the `Cryptide` folder and putting your bo
 - Error Handler : `NullPointer#3322`
 - Randcolor Command : `NullPointer#3322`
 - Rtfm/Rtfd Command : `Skelmis#9135`
+- Music Commands : [MrArkon](https://github.com/MrArkon/)
 
 ## Contact
 - [Discord Server](https://discord.gg/8JuseZMjzf)
