@@ -32,7 +32,6 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='• **__Mod Commands__**', value="`c!mod`", inline=True)
 	    embed.add_field(name='• **__Info Commands__**', value="`c!info`", inline=True)
 	    embed.add_field(name='• **__Misc Commands__**', value="`c!misc`", inline=True)
-	    embed.add_field(name='• **__Owner Commands__**', value="`c!owner`", inline=True)
 	    embed.add_field(name='• **__NSFW Commands__**', value="`c!nsfw`", inline=True)
 	    embed.add_field(name='• **__Fun Commands__**', value="`c!fun`", inline=True)
 	    embed.add_field(name='• **__Social Commands__**', value="`c!social`", inline=True)
