@@ -86,7 +86,6 @@ bot.responseMessages = {
   "int_not_str": "Argument {0} requires an int, not a str, {1}",
   "str_not_int": "Argument {0} requires a str, not an int, {1}",
   "value_error": "One of the arguments you provided is invalid, {}",
-  "permission_error": "I'm Missing Permissions {1}"
 }
 
 #Defining Our Token
@@ -135,8 +134,6 @@ async def on_command_error(ctx, error):
         await ctx.send(bot.responseMessages["command_not_found"].format(commandname,ctx.author.name))
     elif isinstance(error, commands.MissingRequiredArgument):
       await ctx.send(bot.responseMessages["missing_args"].format(ctx.author.name))
-    elif isinstance(error, commands.BotMissingPermissions):
-      await ctx.send(bot.responseMessages["permission_error"].format(ctx.author.name))
     elif isinstance(error, commands.DisabledCommand):
       cname = ctx.invoked_with
       await ctx.send(bot.responseMessages["command_disabled"].format(cname, ctx.author.name))
@@ -163,7 +160,7 @@ async def on_message(message):
 async def updateCommands(ctx):
     embed = discord.Embed(description="Bot has been updated :D", color=0xC0C0C0)
     await ctx.send(embed=embed)
-    print("Bot has been update :D")
+    print("Bot has been update :D\n-----")
     for x in bot.Modules:
         bot.reload_extension(x)
 
