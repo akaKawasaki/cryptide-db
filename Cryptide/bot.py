@@ -57,8 +57,7 @@ bot = commands.Bot(
     case_insensitive=True,
     intents=rich_presence,
     help_command=None,
-    description="A complex but yet simplistic discord bot."
-)
+    description="A complex but yet simplistic discord bot.")
 
 #Defining Help Pages
 imageUrl = "https://cdn.discordapp.com/avatars/811349622709944390/f6758797b79627f4ecf3bc98ecbc6e09.webp?size=1024"
@@ -114,6 +113,7 @@ bot.Modules = [
         "__modules__.NSFW", #NSFW/18+ Commands
         "__modules__.Fun", #Fun/Playful Commands
         "__modules__.EasterEggs", #Secret/Covert/Hidden Commands
+        "__modules__.Music", #Music Commands
 ]
 
 #Load The Cogs
@@ -157,12 +157,24 @@ async def on_message(message):
 
 @bot.command("update")
 @commands.is_owner()
-async def updateCommands(ctx):
-    embed = discord.Embed(description="Bot has been updated :D", color=0xC0C0C0)
-    await ctx.send(embed=embed)
-    print("Bot has been update :D\n-----")
-    for x in bot.Modules:
-        bot.reload_extension(x)
+async def upd(ctx, *, question: str=None):
+    if question == None:
+        embed = discord.Embed(description="Bot has been updated :D", color=0xC0C0C0)
+        await ctx.send(embed=embed)
+        for x in bot.Modules:
+            bot.reload_extension(x)
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(bot.users)} Users | c!help"))
+    elif question == "status":
+        embed = discord.Embed(description="Status has been updated :D", color=0xC0C0C0)
+        await ctx.send(embed=embed)
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(bot.users)} Users | c!help"))
+    elif question == "cmd":
+        embed = discord.Embed(description="Features have been updated :D", color=0xC0C0C0)
+        await ctx.send(embed=embed)
+        await bot.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(bot.users)} Users | c!help"))
+        print("Features have been update :D\n-----")
+        for x in bot.Modules:
+            bot.reload_extension(x)
 
 @bot.command()
 async def help(ctx):
