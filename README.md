@@ -49,6 +49,8 @@ You can run an instance by [inviting the bot to your server](https://discord.com
   - Rtfm/Rtfd Command
 - [MrArkon](https://github.com/MrArkon/)
   - Music Commands
+- [DeCoded-Void](https://github.com/DeCoded-Void/)
+  - Minesweeper
 
 ## Contact
 - [Discord Server](https://discord.gg/8JuseZMjzf)
