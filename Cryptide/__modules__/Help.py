@@ -111,7 +111,7 @@ class Help(commands.Cog, name="Help"):
 
 	    await ctx.send(embed=embed)
 
-#The NAFW Help Has Been Moved To The NSFW.py cog.
+#The NSFW Help Has Been Moved To The NSFW.py cog.
 
 	@commands.command("fun")
 	async def embedoi(self, ctx):
@@ -124,6 +124,7 @@ class Help(commands.Cog, name="Help"):
 	    embed.add_field(name='Flips a coin.', value="`c!flip`", inline=False)
 	    #embed.add_field(name='Tells A Rape Joke.', value="`c!rjoke`", inline=False)
 	    embed.add_field(name='Tells A Dad Joke.', value="`c!djoke`", inline=False)
+	    embed.add_field(name='A game of minesweeper', value="`c!minesweeper <colums> <rows> <bombs>`", inline=False)
 
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)

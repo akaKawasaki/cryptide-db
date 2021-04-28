@@ -347,7 +347,7 @@ class Music(commands.Cog):
         except discord.HTTPException:
             pass
 
-        player.np = await ctx.send(f'**Now Playing:** `{vc.source.title}` '
+        player.np = await ctx.send(f'**The current song is:** `{vc.source.title}` '
                                    f'requested by `{vc.source.requester}`')
 
     @commands.command(name='volume', aliases=['vol'])

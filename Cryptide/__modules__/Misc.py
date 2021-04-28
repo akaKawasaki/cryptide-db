@@ -122,8 +122,10 @@ class Misc(commands.Cog, name="Misc"):
 	@commands.command(name="passgen")
 	async def password_generator(self, ctx):
 	    password = self.generator.random_medium(length=24)
-	    await ctx.author.send(f"Password: **{password}**")
+	    eb = discord.Embed(color=0xC0C0C0, description=f"Password: **{password}**")
+	    eb.set_footer(text="9u3 String Generator")
 	    await ctx.send(f"Hey {ctx.author.mention}, I DM'ed you your generated password!")
+	    await ctx.send(embed=eb)
 
 	@commands.command()
 	async def invite(self, ctx):

@@ -59,7 +59,7 @@ class Forbidden(commands.Cog, name="Forbidden"):
 	    embed.add_field(name='Disables a command', value="`c!unload <command>`", inline=False)
 	    embed.add_field(name='Enables a disabled command', value="`c!reload <command>`", inline=False)
 	    embed.add_field(name='Pushes an Announcement to the Cryptide server for a new release', value="`c!release`", inline=False)
-	    embed.add_field(name='Updates the bot', value="`c!update`", inline=False)
+	    embed.add_field(name='Updates the bot', value="`c!update <status or cmd>`", inline=False)
 	    embed.add_field(name='Sends a list of servers the bot is in', value="`c!servers`", inline=False)
 
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
