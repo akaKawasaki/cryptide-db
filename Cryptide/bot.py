@@ -104,7 +104,7 @@ bot.Modules = [
         "__modules__.EasterEggs", #Secret/Covert/Hidden Commands
         "__modules__.Music", #Music Commands
 
-        #Seperate Commands
+        #Separated Commands
         "__cmds__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
         "__cmds__.Minesweeper", #Holds The Minesweeper Command. 
 ]
