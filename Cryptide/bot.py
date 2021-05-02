@@ -47,7 +47,7 @@ bot = commands.Bot(
     case_insensitive=True,
     intents=rich_presence,
     help_command=None,
-    description="A complex but yet simplistic discord bot.")
+    description="A complex but yet simplistic discord bot.",)
 
 #Defining Help Pages
 imageUrl = "https://cdn.discordapp.com/avatars/811349622709944390/f6758797b79627f4ecf3bc98ecbc6e09.webp?size=1024"
@@ -105,7 +105,7 @@ bot.Modules = [
         "__modules__.Music", #Music Commands
 
         #Separated Commands
-        "__cmds__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
+        "__cmds__.RTFM", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
         "__cmds__.Minesweeper", #Holds The Minesweeper Command. 
 ]
 
