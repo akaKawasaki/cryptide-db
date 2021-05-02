@@ -3,6 +3,7 @@ import asyncio
 import discord
 from discord.ext.buttons import Paginator
 
+
 class Pag(Paginator):
     async def teardown(self):
         try:
@@ -10,11 +11,15 @@ class Pag(Paginator):
         except discord.HTTPException:
             pass
 
+
 def clean_code(content):
+    """Automatically removes code blocks from the code."""
+    # remove ```py\n```
     if content.startswith("```") and content.endswith("```"):
         return "\n".join(content.split("\n")[1:])[:-3]
     else:
         return content
+
 
 async def get_message(
     bot, ctx, content_one="Default Message", content_two="\uFEFF", timeout=100
@@ -38,6 +43,7 @@ async def get_message(
             return msg.content
     except asyncio.TimeoutError:
         return False
+
 
 async def review_embed(bot, ctx, embed) -> bool:
     """Given an embed, send it and wait for a review"""
