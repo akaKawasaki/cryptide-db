@@ -30,28 +30,18 @@ ascii_banner = generate_banner.figlet_format("       Cryptide")
 cwd = Path(__file__).parents[0]
 cwd = str(cwd)
 
-#Prints
-print(Fore.BLUE + Style.BRIGHT + ascii_banner)
-print(Fore.GREEN + Style.BRIGHT + "**********************************************************")
-print(Fore.YELLOW + Style.BRIGHT + "Cogs initialized")
+#Functions
+def prints():
+    print(Fore.BLUE + Style.BRIGHT + ascii_banner)
+    print(Fore.GREEN + Style.BRIGHT + "**********************************************************")
+    print(Fore.YELLOW + Style.BRIGHT + "Cogs initialized")
 
-#Intents
-rich_presence = discord.Intents.all()
-"""
-rich_presence.members = True
-rich_presence.messages = True
-rich_presence.reactions = True
-rich_presence.guilds = True
-rich_presence.integrations = True
-rich_presence.webhooks = True
-rich_presence.bans = True
-rich_presence.invites = True
-rich_presence.presences = True
-"""
-
+prints() #console
 init() #windows
 
 #Defining The Client
+rich_presence = discord.Intents.all()
+
 bot = commands.Bot(
     command_prefix=commands.when_mentioned_or('c!', '--', 'c/', 'c$', 'c.', 'c~'),
     case_insensitive=True,
@@ -97,7 +87,6 @@ bot.Modules = [
         #Info
         "__modules__.Misc", #Misc Commands
         "__modules__.Help", #Hold Command Lists.
-        "__data__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
         "__data__.Listeners", #Main Event Listeners Reside Here
 
         #Experimental
@@ -114,13 +103,17 @@ bot.Modules = [
         "__modules__.Fun", #Fun/Playful Commands
         "__modules__.EasterEggs", #Secret/Covert/Hidden Commands
         "__modules__.Music", #Music Commands
+
+        #Seperate Commands
+        "__cmds__.Docs", #Holds The RTFM Command. Not about to mess up my other cogs. So It has its own cog file.
+        "__cmds__.Minesweeper", #Holds The Minesweeper Command. 
 ]
 
 #Load The Cogs
 for x in bot.Modules:
     bot.load_extension(x)
 
-#Non-Converted Listeners
+#Error Handler
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
@@ -147,6 +140,7 @@ async def on_command_error(ctx, error):
       e = PYLog.mode("error")
       PYLog.log(e, error)
 
+#Command Processor
 @bot.event
 async def on_message(message):
     #ignore yourselves
@@ -155,6 +149,7 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
+#Update Command
 @bot.command("update")
 @commands.is_owner()
 async def upd(ctx, *, question: str=None):
@@ -176,6 +171,7 @@ async def upd(ctx, *, question: str=None):
         for x in bot.Modules:
             bot.reload_extension(x)
 
+#Help Command
 @bot.command()
 async def help(ctx):
     buttons=[u"\u23EA", u"\u2B05", u"\u27A1", u"\u23E9"]
