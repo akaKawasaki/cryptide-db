@@ -46,7 +46,7 @@ class Help(commands.Cog, name="Help"):
 	async def embed4(self, ctx):
 
 	    embed = discord.Embed(title=f'Moderation Commands', description='Here are my mod Modules!', colour=0xC0C0C0, timestamp=ctx.message.created_at)
-
+	    embed.add_field(name='Sends an embed message out to the chat. (it doesnt ping btw)', value="`c!poll <message>`", inline=False)
 	    embed.add_field(name='Deletes messages with ease', value="`c!purge <message_amount>`", inline=False)
 	    embed.add_field(name='Kicks somebody from the Server', value="`c!kick <@user_of_choice> <reason>`", inline=False)
 	    embed.add_field(name='Bans somebody from the Server', value="`c!ban <@user_of_choice> <reason>`", inline=False)
@@ -120,11 +120,11 @@ class Help(commands.Cog, name="Help"):
 
 	    embed.add_field(name='Roles a 6 sided dice', value="`c!dice`", inline=False)
 	    embed.add_field(name='Bot answers a question', value="`c!8ball <question>`", inline=False)
-	    embed.add_field(name='Sends an embed message out to the chat. (it doesnt ping btw)', value="`c!poll <message>`", inline=False)
 	    embed.add_field(name='Flips a coin.', value="`c!flip`", inline=False)
 	    #embed.add_field(name='Tells A Rape Joke.', value="`c!rjoke`", inline=False)
 	    embed.add_field(name='Tells A Dad Joke.', value="`c!djoke`", inline=False)
 	    embed.add_field(name='A game of minesweeper', value="`c!minesweeper <colums> <rows> <bombs>`", inline=False)
+	    embed.add_field(name='Calculates your dick size', value="`c!pp`", inline=False)
 
 	    embed.set_footer(text=f"Carpe Noctem | {self.bot.user.name}")
 	    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.avatar_url)

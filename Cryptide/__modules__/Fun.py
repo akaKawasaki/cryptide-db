@@ -32,6 +32,19 @@ class Fun(commands.Cog, name="Fun"):
 	    #await ctx.send("============================================")
 
 	@commands.command()
+	async def pp(self, ctx, *, user: discord.Member = None):
+	    #await ctx.message.delete()
+	    if user is None:
+	        user = ctx.author
+	    size = random.randint(1, 15)
+	    dong = ""
+	    for _i in range(0, size):
+	        dong += "="
+	    em = discord.Embed(title=f"{user}'s Dick size", description=f"8{dong}D", colour=0xC0C0C0)
+	    await ctx.send(embed=em)
+
+	@commands.command()
+	@commands.has_permissions(kick_members=True)
 	async def poll(self, ctx, *, msGG):
 		await ctx.message.delete()
 		embed=discord.Embed(title="Poll 🎉", description=f"{msGG}")
