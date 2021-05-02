@@ -32,7 +32,7 @@ class Listeners(commands.Cog, name="Listeners"):
         if isinstance(error, ignored):
             return
 
-        #Begin error handling
+        #cooldown handler | error handler is in bot.py
         if isinstance(error, commands.CommandOnCooldown):
             m, s = divmod(error.retry_after, 60)
             h, m = divmod(m, 60)
