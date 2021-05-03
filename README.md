@@ -18,10 +18,6 @@
 	<img alt="Cryptide Version" src="https://img.shields.io/badge/v2.4.7-282C34?">
 </a>
 
-<a href="https://top.gg/bot/811349622709944390/">
-	<img alt="Status" src="https://img.shields.io/badge/status-online-brightgreen.svg">
-</a>
-</p>
 
 # Cryptide Discord Bot
 Cryptide is a discord bot with the basic tools a discord bot comes with, plus some other fun trinkets!
