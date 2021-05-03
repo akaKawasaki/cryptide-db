@@ -9,13 +9,13 @@
 
 <p align="center">
 <a href="https://www.python.org/">
-	<img alt="Python" src="https://img.shields.io/badge/Python-3.9-yellow.svg">
+	<img alt="Python" src="https://img.shields.io/badge/Python 3.9+-282C34?logo=Python">
 </a>
 <a href="https://pypi.org/project/discord.py/">
-	<img alt="Discord.py" src="https://img.shields.io/badge/Discord.py-1.7-blue.svg">
+	<img alt="Discord.py" src="https://img.shields.io/badge/Discord.py 1.7+-282C34?logo=Discord">
 </a>
 <a href="https://github.com/TracedPoints/cryptide-db#">
-	<img alt="Cryptide Version" src="https://img.shields.io/badge/Cryptide-2.4.7-lightgrey.svg">
+	<img alt="Cryptide Version" src="https://img.shields.io/badge/v2.4.7-282C34?">
 </a>
 
 <a href="https://top.gg/bot/811349622709944390/">
